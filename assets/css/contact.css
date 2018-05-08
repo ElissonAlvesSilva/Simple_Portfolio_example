@@ -1,0 +1,111 @@
+.contact {
+    display: flex;
+    background-color: #fff;
+    padding: 50px 20%;
+    flex-direction: column;
+}
+
+.contact-header h2 {
+    color: #FEDA31;
+    font-weight: 300;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-size: 3vw;
+}
+
+.contact-header small {
+    color: #171A1F;
+    font-weight: 300;
+}
+
+.contact-header {
+    margin-bottom: 20px;
+}
+
+.form-content {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"],
+textarea {
+    font-size: 1.3rem;
+    line-height: 1;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    color: #171A1F;
+    border: 2px solid rgba(23, 26, 31, .6);
+    display: block;
+    width: 100%;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+    border: 2px solid #FEDA31;
+    outline: #FEDA31;
+}
+
+.submit-button {
+    padding: 15px;
+    text-align: center;
+}
+
+button {
+    background-color: transparent;
+    padding: 1rem 6rem;
+    border: 2px solid #FEDA31;
+    border-radius: 50px;
+    font-weight: 300;
+    font-size: 1.2vw;
+}
+
+button:hover {
+    background-color: #FEDA31;
+    color: #171A1F;
+}
+
+.contact-items {
+    background-color: #FEDA31;
+    padding: 20px;
+    display: flex;
+}
+
+.contact-items ul li {
+    display: inline-block;
+}
+
+.contact-items ul li a {
+    text-decoration: none;
+    color: #171A1F;
+    display: inline-block;
+}
+
+.contact-items ul li a span {
+    position: relative;
+    top: -30px;
+    left: -15px;
+}
+
+.contact-items img {
+    width: 100px;
+}
+
+@media (max-width:330px) {
+    .contact-items ul li:nth-child(2) a span {
+        position: relative;
+        top: -50px;
+        left: 90px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .contact-header h2 {
+        font-size: 8vw;
+    }
+    button {
+        font-size: 4vw;
+        padding: 1rem 4rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {}
